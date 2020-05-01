@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "albumId",
+        "id",
+        "title",
+        "url",
+        "thumbnailUrl"
+    ],
+    "properties": {
+        "albumId": {
+            "$id": "#/properties/albumId",
+            "type": "integer",
+            "title": "The Albumid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string",
+            "title": "The Title Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "accusamus beatae ad facilis cum similique qui sunt"
+            ]
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "type": "string",
+            "title": "The Url Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://via.placeholder.com/600/92c952"
+            ]
+        },
+        "thumbnailUrl": {
+            "$id": "#/properties/thumbnailUrl",
+            "type": "string",
+            "title": "The Thumbnailurl Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://via.placeholder.com/150/92c952"
+            ]
+        }
+    }
+}
